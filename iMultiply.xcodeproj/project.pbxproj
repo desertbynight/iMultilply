@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31094B032940C5B700C1EF6C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E80BC22940ABBC0051DDCC /* Question.swift */; };
+		31094B042940C5BB00C1EF6C /* QuestionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F2376293F745F004C8679 /* QuestionType.swift */; };
 		316F2370293F7422004C8679 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F236F293F7422004C8679 /* main.swift */; };
+		316F2377293F745F004C8679 /* QuestionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F2376293F745F004C8679 /* QuestionType.swift */; };
+		316F237F293F7B88004C8679 /* iMultiplyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F237E293F7B88004C8679 /* iMultiplyTests.swift */; };
+		316F2383293F7BB3004C8679 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F236F293F7422004C8679 /* main.swift */; };
+		31E80BC32940ABBC0051DDCC /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E80BC22940ABBC0051DDCC /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +31,21 @@
 /* Begin PBXFileReference section */
 		316F236C293F7422004C8679 /* iMultiply */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = iMultiply; sourceTree = BUILT_PRODUCTS_DIR; };
 		316F236F293F7422004C8679 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		316F2376293F745F004C8679 /* QuestionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionType.swift; sourceTree = "<group>"; };
+		316F237C293F7B88004C8679 /* iMultiplyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMultiplyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		316F237E293F7B88004C8679 /* iMultiplyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMultiplyTests.swift; sourceTree = "<group>"; };
+		31E80BC22940ABBC0051DDCC /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		316F2369293F7422004C8679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		316F2379293F7B88004C8679 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				316F236E293F7422004C8679 /* iMultiply */,
+				316F237D293F7B88004C8679 /* iMultiplyTests */,
 				316F236D293F7422004C8679 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				316F236C293F7422004C8679 /* iMultiply */,
+				316F237C293F7B88004C8679 /* iMultiplyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +77,18 @@
 			isa = PBXGroup;
 			children = (
 				316F236F293F7422004C8679 /* main.swift */,
+				31E80BC22940ABBC0051DDCC /* Question.swift */,
+				316F2376293F745F004C8679 /* QuestionType.swift */,
 			);
 			path = iMultiply;
+			sourceTree = "<group>";
+		};
+		316F237D293F7B88004C8679 /* iMultiplyTests */ = {
+			isa = PBXGroup;
+			children = (
+				316F237E293F7B88004C8679 /* iMultiplyTests.swift */,
+			);
+			path = iMultiplyTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +111,23 @@
 			productReference = 316F236C293F7422004C8679 /* iMultiply */;
 			productType = "com.apple.product-type.tool";
 		};
+		316F237B293F7B88004C8679 /* iMultiplyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 316F2380293F7B88004C8679 /* Build configuration list for PBXNativeTarget "iMultiplyTests" */;
+			buildPhases = (
+				316F2378293F7B88004C8679 /* Sources */,
+				316F2379293F7B88004C8679 /* Frameworks */,
+				316F237A293F7B88004C8679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iMultiplyTests;
+			productName = iMultiplyTests;
+			productReference = 316F237C293F7B88004C8679 /* iMultiplyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +139,9 @@
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					316F236B293F7422004C8679 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					316F237B293F7B88004C8679 = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
@@ -111,16 +160,40 @@
 			projectRoot = "";
 			targets = (
 				316F236B293F7422004C8679 /* iMultiply */,
+				316F237B293F7B88004C8679 /* iMultiplyTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		316F237A293F7B88004C8679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		316F2368293F7422004C8679 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31E80BC32940ABBC0051DDCC /* Question.swift in Sources */,
 				316F2370293F7422004C8679 /* main.swift in Sources */,
+				316F2377293F745F004C8679 /* QuestionType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		316F2378293F7B88004C8679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31094B032940C5B700C1EF6C /* Question.swift in Sources */,
+				316F2383293F7BB3004C8679 /* main.swift in Sources */,
+				316F237F293F7B88004C8679 /* iMultiplyTests.swift in Sources */,
+				31094B042940C5BB00C1EF6C /* QuestionType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +335,36 @@
 			};
 			name = Release;
 		};
+		316F2381293F7B88004C8679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MS234NA77Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bartolini.massimiliano.iMultiplyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		316F2382293F7B88004C8679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MS234NA77Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bartolini.massimiliano.iMultiplyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -279,6 +382,15 @@
 			buildConfigurations = (
 				316F2374293F7422004C8679 /* Debug */,
 				316F2375293F7422004C8679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		316F2380293F7B88004C8679 /* Build configuration list for PBXNativeTarget "iMultiplyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				316F2381293F7B88004C8679 /* Debug */,
+				316F2382293F7B88004C8679 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
