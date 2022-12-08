@@ -1,10 +1,3 @@
-//
-//  Question.swift
-//  iMultiply
-//
-//  Created by Massimiliano Bartolini on 2022/12/07.
-//
-
 import Foundation
 
 struct Question {
