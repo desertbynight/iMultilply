@@ -16,7 +16,6 @@ class iMultiply {
         print("Welcome to iMultiply!")
         
         repeat {
-            
             let question = Question()
             
             print("\n\(questionNumber). \(question.string)")
@@ -27,7 +26,6 @@ class iMultiply {
                 print(response)
             }
         } while questionNumber <= 10
-        
         
         print("\nYou scored \(score).")
     }
@@ -44,7 +42,6 @@ class iMultiply {
             return ("Wrong, result was \(question.answer)")
         }
     }
-    
 }
 
 let game = iMultiply()
