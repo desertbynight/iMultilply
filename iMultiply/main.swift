@@ -43,7 +43,6 @@ class iMultiply {
         }
     }
 }
-
 let game = iMultiply()
 game.start()
 
